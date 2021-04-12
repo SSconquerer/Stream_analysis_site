@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Quiz</title>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo26.png" alt="Myturingclub.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#Wrapp">Aptitude Test</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- //take test ,learn about yourself, analyse , choose -->
+    <section id="home">
+        <h1 class="h-primary">Welcome To Stream Analyst</h1>
+        <p>Find the right stream for you!! </p>
+        <!-- <p>Find out all the latest information related to contests and mentors </p> -->
+        <button class="btn" onclick='window.location="#Wrapp" ' >Join</button>
+    </section>
+        
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="download.jpg" alt="">
+                <h2 class="h-secondary center">Aptitude Tests</h2>
+                <p class="center">Take a Quick aptitude test to know your skills.</p>
+            </div>
+            <div class="box">
+                <img src="logo6.png" alt="">
+                <h2 class="h-secondary center">Learn about yourself</h2>
+                <p class="center">Find your aptitude level using our test. </p>
+            </div>
+            <div class="box">
+                <img src="logo7.png" alt="">
+                <h2 class="h-secondary center">Analyse yourself</h2>
+                <p class="center">We will provide a detailed report of your scores in each test.
+            </div>
+            <div class="box">
+                <img src="logo9.png" alt="">
+                <h2 class="h-secondary center">Choose right stream</h2>
+                <p class="center">We will let you know your most compatible stream.
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="Wrapp" class="wrapper">
+        <div class="welcome_text">
+            <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+                <input type="text" name="name">
+                <button>Start Quiz</button>
+            </form>
+        </div>
+    </div>
+
+
+    <section id="contact">
+        <h1 class="h-primary2 center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myTuringclub.com. All rights reserved!
+        </div>
+    </footer>
+    <!-- site.js -->
+    <script src="dist/js/start.js"></script>
+</body>
+
+</html>
